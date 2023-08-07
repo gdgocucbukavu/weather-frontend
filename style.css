@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/* Initialisation du projet */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f3f3fa;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1px;
+}
+
+#partie1 {
+  display: flex;
+  flex-direction: row;
+}
+
+#partie1 .cartePrincipale {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(202, 202, 202, 0.1);
+}
+
+#partie1 .carteSecondaire {
+  flex: 3;
+  margin: 10px;
+  padding: 10px;
+  height: 450px;
+}
+
+.cartePrincipale {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.cartePrincipale img {
+  width: 150px;
+}
+.cartePrincipale .texte h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: rgb(50, 131, 161);
+}
+.cartePrincipale .texte h2 span {
+  font-style: normal;
+}
+.cartePrincipale .texte h3 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+.cartePrincipale .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cards .card {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  background-color: #d9d9d94b;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(202, 202, 202, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 0.6rem;
+  color: rgb(50, 131, 161);
+}
+
+.card p {
+  font-size: 0.8rem;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+  #partie1 {
+    flex-direction: column;
+  }
+  #partie1 .cartePrincipale {
+    margin: 10px 0;
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  #partie1 .carteSecondaire {
+    margin: 10px 0;
+  }
+}

@@ -4,8 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>Bienvenue sur weather app</h2>
+    <!-- Toute la structre sera ici -->
+    <main>
+      <!-- Section pour la première partie -->
+      <section id="partie1">
+        <div class="cartePrincipale">
+          <!-- C'est ici où on va mettre le code pour la carte principale -->
+          <img src="/assets/soleil.png" alt="" srcset="" />
+          <div class="texte">
+            <h2>Mercredi, <span></span>16h 20</span></h2>
+            <h3>20°C</h3>
+            <h4>Temps ensoleillé</h4>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <h3>Humidité</h3>
+              <p>20%</p>
+            </div>
+            <div class="card">
+              <h3>Vitesse vent</h3>
+              <p>20km/h</p>
+            </div>
+            <div class="card">
+              <h3>Proba. de pluie</h3>
+              <p>20%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carteSecondaire">
+          <!-- C'est ici où on va mettre le code pour les carte secondaires à droite -->
+          <div class="recherche">
+            <!-- C'est ici où on va mettre le code pour la barre de recherche -->
+            <form>
+              <input type="text" placeholder="Rechercher une ville" />
+              <button type="submit">Rechercher</button>
+            </form>
+          </div>
+          <div class="parjour">
+            <!-- C'est ici où on va mettre le code pour les cartes par jour -->
+          </div>
+          <div class="villeRdc">
+            <!-- C'est ici où on va mettre le code pour les cartes par ville -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Section pour la deuxième partie -->
+      <section id="partie2">
+        <h2>Villes populaires</h2>
+        <div class="cartesvillemonde">
+          <!-- C'est ici où on va mettre le code pour les cartes par ville du monde -->
+        </div>
+      </section>
+    </main>
   </body>
 </html>
