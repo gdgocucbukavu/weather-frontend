@@ -162,7 +162,9 @@ padding-top:10px;
   }
   .carteSecondaire .recherche{
     flex-direction: column-reverse;
-
+  }
+  .carteSecondaire .parjour .card{
+    width:95%;
   }
   #partie1 .carteSecondaire {
     margin: 10px 0;
