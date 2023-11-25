@@ -95,59 +95,102 @@ body {
 .card p {
   font-size: 0.8rem;
 }
-.carteSecondaire .recherche{
+.carteSecondaire .recherche {
   display: flex;
-  padding:8px; 
-  gap:12px;
-}
-.carteSecondaire .recherche form{
-  width:450px;
-  gap:12px;
-}
-.carteSecondaire .recherche form input{
-  border: none;
   padding: 8px;
+  gap: 12px;
 }
-.carteSecondaire .recherche .left{
-  display:flex;
-  gap:12px;
-  width:100%;
-  font-size:18px;
+.carteSecondaire .recherche form {
+  width: 450px;
+  gap: 12px;
 }
-.carteSecondaire .recherche .left p span{
-  color:#b4b4b6;
+.carteSecondaire .recherche form input {
+  border: none;
+  padding: 10px;
+  outline: none;
 }
-.carteSecondaire .parjour{
-display:flex;
-flex-wrap:wrap;
-justify-content: center;
-gap:12px;
-padding-top:10px;
+.carteSecondaire .recherche .left {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  font-size: 18px;
 }
-.carteSecondaire .parjour .card{
-  width:120px;
+.carteSecondaire .recherche .left p span {
+  color: #b4b4b6;
+}
+.carteSecondaire .parjour {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 10px;
+}
+.carteSecondaire .parjour .card {
+  width: 120px;
   background: white;
-  display:flex;
-  padding:12px;
+  display: flex;
+  padding: 12px;
   align-items: center;
-  flex-direction:column;
-  border-radius:15px;
-  height:150px;
+  flex-direction: column;
+  border-radius: 15px;
+  height: 150px;
 }
-.carteSecondaire .parjour .card img{
-  width:80px;
+.carteSecondaire .parjour .card img {
+  width: 80px;
 }
-.carteSecondaire .parjour .card h2{
-  font-size:18px;
-  color:black;
+.carteSecondaire .parjour .card h2 {
+  font-size: 18px;
+  color: black;
 }
-.carteSecondaire .parjour .card h3{
-  font-size:18px;
-  color:black;
+.carteSecondaire .parjour .card h3 {
+  font-size: 18px;
+  color: black;
 }
-.carteSecondaire .parjour .card h3 span{
-  color:#b4b4b6;
+.carteSecondaire .parjour .card h3 span {
+  color: #b4b4b6;
 }
+
+/* Pour les villes proches */
+
+.villeRdc {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.ville-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0 5px rgba(202, 202, 202, 0.1);
+}
+
+.ville-container .card {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  background: linear-gradient(90deg, #0000006e, #000000a0),
+    url("./assets/licensed-image.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(202, 202, 202, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  min-height: 150px;
+}
+
+.ville-container .card h3 {
+  font-size: 1rem;
+  color: white;
+}
+
+.ville-container .card p {
+  font-size: 0.7rem;
+  color: white;
+  margin-top: 1rem;
+}
+
 /* Responsive design */
 
 @media screen and (max-width: 768px) {
@@ -160,13 +203,17 @@ padding-top:10px;
     margin: auto;
     margin-top: 1rem;
   }
-  .carteSecondaire .recherche{
+  .carteSecondaire .recherche {
     flex-direction: column-reverse;
   }
-  .carteSecondaire .parjour .card{
-    width:95%;
+  .carteSecondaire .parjour .card {
+    width: 95%;
   }
   #partie1 .carteSecondaire {
     margin: 10px 0;
+  }
+
+  .ville-container {
+    flex-direction: column;
   }
 }
