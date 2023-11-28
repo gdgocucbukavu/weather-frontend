@@ -191,6 +191,68 @@ body {
   margin-top: 1rem;
 }
 
+.ville-container .card .ajout-favori {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: skyblue;
+  text-align: right;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.villepopulaire-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #fff;
+}
+
+.villepopulaire-container .card{
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  background: linear-gradient(90deg, #0000006e, #000000a0),
+    url("./assets/licensed-image.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(202, 202, 202, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  min-height: 150px;
+  position: relative;
+}
+
+.villepopulaire-container .card h3 {
+  font-size: 1rem;
+  color: white;
+}
+
+.villepopulaire-container .card .infos {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: start;
+  font-size: 0.85rem;
+  color: rgb(224, 224, 224);
+  margin-top: 1rem;
+}
+.villepopulaire-container .card .infos i[class^="fa"]{
+  display: inline-block;
+  width: 20px;
+  color: white;
+}
+.villepopulaire-container .card .jour{
+  text-align: right;
+  font-size: 0.9rem;
+}
+.villepopulaire-container .card .jour i[class~="fa-sun"]{color: rgb(255, 208, 0);}
+.villepopulaire-container .card .jour i[class~="fa-cloud"]{color: rgb(86, 165, 240);}
+
 /* Responsive design */
 
 @media screen and (max-width: 768px) {
@@ -198,22 +260,53 @@ body {
     flex-direction: column;
   }
   #partie1 .cartePrincipale {
-    margin: 10px 0;
+    margin: 10px auto;
     width: 95%;
     margin: auto;
     margin-top: 1rem;
   }
+  .carteSecondaire{
+    width: 100%;
+    margin: 10px auto;
+  }
   .carteSecondaire .recherche {
     flex-direction: column-reverse;
   }
+  .carteSecondaire .parjour{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .carteSecondaire .parjour .card {
     width: 95%;
+    margin: auto;
   }
   #partie1 .carteSecondaire {
-    margin: 10px 0;
+    margin: 10px auto;
+    padding: 0px;
+  }
+
+  #partie2{
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .ville-container {
     flex-direction: column;
+  }
+
+  .villepopulaire-container {
+    width: 100%;
+    /* flex-direction: column; */
+    align-items: start;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .villepopulaire-container .card {
+    flex: none;
+    width: calc(98% - 5px);
+    margin: 0 auto;
   }
 }
