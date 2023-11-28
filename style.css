@@ -191,6 +191,15 @@ body {
   margin-top: 1rem;
 }
 
+.ville-container .card .ajout-favori {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: skyblue;
+  text-align: right;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
 .villepopulaire-container{
   display: flex;
   flex-direction: row;
